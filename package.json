@@ -4,20 +4,25 @@
   "description": "portfolio project from reed barger",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "deploy": "cd out && now --public",
+    "now-build": "next build && next export -o dist"
   },
   "keywords": [
     "next.js",
     "react",
     "js"
   ],
-  "author": "kirk vaander kuy",
+  "author": "kirk vander kuy",
   "license": "ISC",
   "dependencies": {
     "next": "^10.2.0",
     "next-google-fonts": "^2.2.0",
     "nprogress": "^0.2.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "vercel": "^22.0.1"
   }
 }
